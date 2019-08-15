@@ -7,7 +7,9 @@ export const initialState = {
     name: '2019 Ford Mustang',
     image:
       'https://cdn.motor1.com/images/mgl/0AN2V/s1/2019-ford-mustang-bullitt.jpg',
-    features: []
+    features: [
+      { id: 4, name: 'Rear spoiler', price: 250}
+    ]
   },
   store: [
     { id: 1, name: 'V-6 engine', price: 1500 },
@@ -29,7 +31,10 @@ export function todoReducer(state , action) {
       name: '2019 Ford Mustang',
       image:
         'https://cdn.motor1.com/images/mgl/0AN2V/s1/2019-ford-mustang-bullitt.jpg',
-      features: []
+      features: [
+      { id: '', name: '', price: '' },
+      
+      ]
     },
     store: [
       { id: 1, name: 'V-6 engine', price: 1500 },
