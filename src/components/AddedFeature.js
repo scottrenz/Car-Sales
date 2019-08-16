@@ -4,7 +4,6 @@ import { initialState, todoReducer } from '../reducers/todoReducer';
 
 const AddedFeature = props => {
   const [state, dispatch] = useReducer(todoReducer, initialState);
-  console.log('Hello Scott')
   return (
     <li>
       {/* Add an onClick to run a function to remove a feature */}

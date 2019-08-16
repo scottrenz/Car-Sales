@@ -20,5 +20,5 @@ const mapStateToProps = state => {
 }
 export default connect(
 mapStateToProps,
-{buyFeature}
+{}
 )(Total);
