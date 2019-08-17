@@ -1,7 +1,5 @@
-import React, {useState, useReducer} from 'react';
-import {initialState, todoReducer} from '../reducers/todoReducer'
+import React from 'react';
 import { connect } from 'react-redux'
-import {buyFeature} from '../actions'
 const Header = props => {
   return (
     <>
@@ -15,7 +13,6 @@ const Header = props => {
 };
 
 const mapStateToProps = state => {
-  console.log('header state',state)
   return {
     carImage: state.car.image,
     carName: state.car.name,

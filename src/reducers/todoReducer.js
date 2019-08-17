@@ -1,5 +1,3 @@
-import React, { useReducer } from 'react'
-
 export const initialState = {
   additionalPrice: 0,
   car: {
@@ -21,7 +19,6 @@ feature4: {name: ''}
 
 // We will use the same reducer we created in the previous section
 export function todoReducer(state , action) {
-console.log('remover entered state is',state)
   let feature1 = state.feature1
   let feature2 = state.feature2
   let feature3 = state.feature3

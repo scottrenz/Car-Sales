@@ -1,9 +1,6 @@
-import React, {useState, useReducer} from 'react';
-import {initialState, todoReducer} from '../reducers/todoReducer'
+import React from 'react';
 import { connect } from 'react-redux'
 import {removeFeature1,removeFeature2,removeFeature3,removeFeature4} from '../actions'
-
-import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
   return (
@@ -33,7 +30,6 @@ const AddedFeatures = props => {
 };
 
 const mapStateToProps = state => {
-  console.log('header state',state)
   return {
     feature1: state.feature1,
     feature2: state.feature2,

@@ -1,8 +1,6 @@
-import React, {useState, useReducer} from 'react';
-import {initialState, todoReducer} from '../reducers/todoReducer'
+import React from 'react';
 import { connect } from 'react-redux'
 import {buyFeature1,buyFeature2,buyFeature3,buyFeature4} from '../actions'
-import AdditionalFeature from './AdditionalFeature';
 
 const AdditionalFeatures = props => {
   return (
@@ -32,7 +30,6 @@ const AdditionalFeatures = props => {
   );
 };
 const mapStateToProps = state => {
-  console.log('header state',state)
   return {
     store1: state.store1,
     store2: state.store2,
